@@ -9,7 +9,7 @@ const WebsiteTable = () => {
     key: "url",
     direction: "asc",
   });
-  const websitesPerPage = 5;
+  const websitesPerPage = 5;  // per page list 
 
   useEffect(() => {
     const fetchWebsites = async () => {
