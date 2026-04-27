@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+  <rect width="900" height="280" fill="#0b1220"/>
+  <rect x="24" y="24" width="852" height="232" rx="12" fill="#111827" stroke="#1f2937"/>
+
+  <text x="48" y="60" fill="#f3f4f6" font-size="15" font-weight="600">Status badge variants</text>
+  <text x="48" y="80" fill="#9ca3af" font-size="12">How each HTTP outcome renders in the monitored-websites table.</text>
+
+  <!-- Success: Up · 200 -->
+  <rect x="48" y="104" width="110" height="26" rx="13" fill="#14532d" fill-opacity="0.25" stroke="#22c55e" stroke-opacity="0.35"/>
+  <circle cx="62" cy="117" r="3.5" fill="#4ade80"/>
+  <text x="72" y="122" fill="#86efac" font-size="12" font-weight="600">Up · 200</text>
+  <text x="172" y="122" fill="#9ca3af" font-size="12">2xx response — site is operational</text>
+
+  <!-- Success: Up · 301 -->
+  <rect x="48" y="142" width="110" height="26" rx="13" fill="#14532d" fill-opacity="0.25" stroke="#22c55e" stroke-opacity="0.35"/>
+  <circle cx="62" cy="155" r="3.5" fill="#4ade80"/>
+  <text x="72" y="160" fill="#86efac" font-size="12" font-weight="600">Up · 301</text>
+  <text x="172" y="160" fill="#9ca3af" font-size="12">3xx redirect (not followed) — treated as reachable</text>
+
+  <!-- Danger: Down · 404 -->
+  <rect x="48" y="180" width="122" height="26" rx="13" fill="#7f1d1d" fill-opacity="0.25" stroke="#ef4444" stroke-opacity="0.35"/>
+  <circle cx="62" cy="193" r="3.5" fill="#f87171"/>
+  <text x="72" y="198" fill="#fca5a5" font-size="12" font-weight="600">Down · 404</text>
+  <text x="184" y="198" fill="#9ca3af" font-size="12">Client error — site not serving the resource</text>
+
+  <!-- Danger: Down · 500 -->
+  <rect x="48" y="218" width="122" height="26" rx="13" fill="#7f1d1d" fill-opacity="0.25" stroke="#ef4444" stroke-opacity="0.35"/>
+  <circle cx="62" cy="231" r="3.5" fill="#f87171"/>
+  <text x="72" y="236" fill="#fca5a5" font-size="12" font-weight="600">Down · 500</text>
+  <text x="184" y="236" fill="#9ca3af" font-size="12">Server error — backend is failing</text>
+
+  <!-- Danger: Down (network) -->
+  <rect x="500" y="104" width="86" height="26" rx="13" fill="#7f1d1d" fill-opacity="0.25" stroke="#ef4444" stroke-opacity="0.35"/>
+  <circle cx="514" cy="117" r="3.5" fill="#f87171"/>
+  <text x="524" y="122" fill="#fca5a5" font-size="12" font-weight="600">Down</text>
+  <text x="600" y="122" fill="#9ca3af" font-size="12">DNS / timeout / connection refused</text>
+
+  <text x="500" y="168" fill="#9ca3af" font-size="11" font-weight="700" letter-spacing="1">COLOR LEGEND</text>
+  <rect x="500" y="180" width="16" height="16" rx="3" fill="#14532d" fill-opacity="0.5" stroke="#22c55e" stroke-opacity="0.6"/>
+  <text x="522" y="193" fill="#d1d5db" font-size="12">Up — success (green)</text>
+  <rect x="500" y="206" width="16" height="16" rx="3" fill="#7f1d1d" fill-opacity="0.5" stroke="#ef4444" stroke-opacity="0.6"/>
+  <text x="522" y="219" fill="#d1d5db" font-size="12">Down — danger (red)</text>
+</svg>
